@@ -1,0 +1,1428 @@
+[
+  {
+    "company_id": "68968",
+    "name": "Square",
+    "profile_url": "https://www.builtinla.com/company/square",
+    "tags": [
+      "eCommerce",
+      "Fintech",
+      "Hardware",
+      "Payments",
+      "Software",
+      "Financial Services"
+    ],
+    "website": "http://www.squareup.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=68968",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "86380",
+    "name": "Cash App",
+    "profile_url": "https://www.builtinla.com/company/cash-app",
+    "tags": [
+      "Blockchain",
+      "Fintech",
+      "Mobile",
+      "Payments",
+      "Software",
+      "Financial Services"
+    ],
+    "website": "https://cash.app/careers",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=86380",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "83755",
+    "name": "Spectrum",
+    "profile_url": "https://www.builtinla.com/company/spectrum-0",
+    "tags": [
+      "Information Technology",
+      "Internet of Things",
+      "Mobile",
+      "On-Demand",
+      "Software"
+    ],
+    "website": "https://jobs.spectrum.com/?utm_campaign=brand&utm_source=built-in&utm_medium=profile",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=83755",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64986",
+    "name": "Artera",
+    "profile_url": "https://www.builtinla.com/company/artera",
+    "tags": [
+      "Healthtech",
+      "Other",
+      "Sales",
+      "Software",
+      "Analytics",
+      "Conversational AI"
+    ],
+    "website": "https://artera.io/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64986",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "105938",
+    "name": "Block",
+    "profile_url": "https://www.builtinla.com/company/block-inc",
+    "tags": [
+      "Blockchain",
+      "eCommerce",
+      "Fintech",
+      "Payments",
+      "Software",
+      "Financial Services",
+      "Cryptocurrency"
+    ],
+    "website": "https://block.xyz",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=105938",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63480",
+    "name": "Cloudflare",
+    "profile_url": "https://www.builtinla.com/company/cloudflare",
+    "tags": [
+      "Cloud",
+      "Information Technology",
+      "Security",
+      "Software",
+      "Cybersecurity"
+    ],
+    "website": "http://www.cloudflare.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63480",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64945",
+    "name": "Optimal (formerly Effective Spend)",
+    "profile_url": "https://www.builtinla.com/company/optimal",
+    "tags": [
+      "Agency",
+      "Digital Media",
+      "eCommerce",
+      "Social Media",
+      "Business Intelligence"
+    ],
+    "website": "https://www.winwithoptimal.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64945",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "111763",
+    "name": "Doodle Labs",
+    "profile_url": "https://www.builtinla.com/company/doodle-labs",
+    "tags": [
+      "Aerospace",
+      "Hardware",
+      "Internet of Things",
+      "Robotics",
+      "Wearables",
+      "App development",
+      "Automation"
+    ],
+    "website": "https://doodlelabs.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=111763",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63649",
+    "name": "Crunchyroll",
+    "profile_url": "https://www.builtinla.com/company/crunchyroll",
+    "tags": [
+      "Digital Media",
+      "eCommerce",
+      "Gaming",
+      "Mobile",
+      "News + Entertainment"
+    ],
+    "website": "https://www.crunchyroll.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63649",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "81788",
+    "name": "People Inc.",
+    "profile_url": "https://www.builtinla.com/company/people-inc-5",
+    "tags": [
+      "AdTech",
+      "Consumer Web",
+      "Digital Media",
+      "eCommerce",
+      "Marketing Tech"
+    ],
+    "website": "https://www.people.inc/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=81788",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "54185",
+    "name": "Centerfield",
+    "profile_url": "https://www.builtinla.com/company/centerfield",
+    "tags": [
+      "Artificial Intelligence",
+      "Big Data",
+      "Consumer Web",
+      "Digital Media",
+      "Marketing Tech"
+    ],
+    "website": "http://www.centerfield.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=54185",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "81520",
+    "name": "ServiceNow",
+    "profile_url": "https://www.builtinla.com/company/servicenow",
+    "tags": [
+      "Artificial Intelligence",
+      "Cloud",
+      "HR Tech",
+      "Information Technology",
+      "Productivity",
+      "Software",
+      "Automation"
+    ],
+    "website": "http://www.servicenow.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=81520",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64621",
+    "name": "Magnite",
+    "profile_url": "https://www.builtinla.com/company/magnite",
+    "tags": [
+      "AdTech",
+      "Big Data",
+      "Digital Media",
+      "Software"
+    ],
+    "website": "http://www.magnite.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64621",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "144701",
+    "name": "First Entertainment Credit Union",
+    "profile_url": "https://www.builtinla.com/company/first-entertainment-credit-union",
+    "tags": [
+      "Financial Services"
+    ],
+    "website": "https://www.firstent.org/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=144701",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63858",
+    "name": "Golden Hippo",
+    "profile_url": "https://www.builtinla.com/company/golden-hippo",
+    "tags": [
+      "Digital Media",
+      "eCommerce",
+      "Information Technology",
+      "Marketing Tech",
+      "Retail",
+      "Social Media",
+      "Analytics"
+    ],
+    "website": "http://www.goldenhippo.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63858",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "54183",
+    "name": "Celonis",
+    "profile_url": "https://www.builtinla.com/company/celonis",
+    "tags": [
+      "Big Data",
+      "Information Technology",
+      "Productivity",
+      "Software",
+      "Analytics",
+      "Business Intelligence",
+      "Consulting"
+    ],
+    "website": "https://www.celonis.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=54183",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "85410",
+    "name": "Collectors",
+    "profile_url": "https://www.builtinla.com/company/collectors",
+    "tags": [
+      "Consumer Web",
+      "eCommerce",
+      "Machine Learning",
+      "Professional Services",
+      "Software",
+      "Sports",
+      "Analytics"
+    ],
+    "website": "http://www.collectors.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=85410",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "87556",
+    "name": "ZS",
+    "profile_url": "https://www.builtinla.com/company/zs",
+    "tags": [
+      "Artificial Intelligence",
+      "Healthtech",
+      "Professional Services",
+      "Analytics",
+      "Consulting"
+    ],
+    "website": "https://www.zs.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=87556",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64465",
+    "name": "Octus",
+    "profile_url": "https://www.builtinla.com/company/octus",
+    "tags": [
+      "Fintech",
+      "News + Entertainment",
+      "Software",
+      "Database",
+      "Financial Services"
+    ],
+    "website": "https://octus.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64465",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "71154",
+    "name": "Huntress",
+    "profile_url": "https://www.builtinla.com/company/huntress",
+    "tags": [
+      "Information Technology",
+      "Cybersecurity"
+    ],
+    "website": "https://huntress.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=71154",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "88351",
+    "name": "Perk",
+    "profile_url": "https://www.builtinla.com/company/perk-5",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Greentech",
+      "Sales",
+      "Software",
+      "Travel",
+      "Hospitality"
+    ],
+    "website": "https://www.perk.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=88351",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "88430",
+    "name": "Whatnot",
+    "profile_url": "https://www.builtinla.com/company/whatnot",
+    "tags": [
+      "eCommerce",
+      "Mobile"
+    ],
+    "website": "http://www.whatnot.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=88430",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "230758",
+    "name": "Compa",
+    "profile_url": "https://www.builtinla.com/company/compa",
+    "tags": [
+      "Artificial Intelligence",
+      "HR Tech",
+      "Other",
+      "Software",
+      "Business Intelligence"
+    ],
+    "website": "http://compa.ai",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=230758",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "178837",
+    "name": "Parsec Automation",
+    "profile_url": "https://www.builtinla.com/company/parsec-automation-corp",
+    "tags": [
+      "Artificial Intelligence",
+      "Information Technology",
+      "Internet of Things",
+      "Software",
+      "Analytics",
+      "Automation",
+      "Manufacturing"
+    ],
+    "website": "https://parsec-corp.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=178837",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "73675",
+    "name": "M13",
+    "profile_url": "https://www.builtinla.com/company/m13",
+    "tags": [
+      "Angel or VC Firm"
+    ],
+    "website": "http://m13.co",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=73675",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63948",
+    "name": "HopSkipDrive",
+    "profile_url": "https://www.builtinla.com/company/hopskipdrive",
+    "tags": [
+      "Automotive",
+      "Edtech",
+      "Kids + Family",
+      "Mobile",
+      "Social Impact",
+      "Transportation"
+    ],
+    "website": "http://hopskipdrive.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63948",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "83275",
+    "name": "Instawork",
+    "profile_url": "https://www.builtinla.com/company/instawork",
+    "tags": [
+      "eCommerce",
+      "Food",
+      "HR Tech",
+      "Information Technology",
+      "Mobile",
+      "Retail",
+      "Software"
+    ],
+    "website": "https://www.instawork.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=83275",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "84926",
+    "name": "2K",
+    "profile_url": "https://www.builtinla.com/company/2k",
+    "tags": [
+      "Gaming",
+      "Information Technology",
+      "Mobile",
+      "Software",
+      "eSports"
+    ],
+    "website": "https://2k.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=84926",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "82980",
+    "name": "PwC",
+    "profile_url": "https://www.builtinla.com/company/pwc",
+    "tags": [
+      "Artificial Intelligence",
+      "Professional Services",
+      "Business Intelligence",
+      "Consulting",
+      "Cybersecurity",
+      "Generative AI"
+    ],
+    "website": "https://www.pwc.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=82980",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64902",
+    "name": "Dropbox",
+    "profile_url": "https://www.builtinla.com/company/dropbox",
+    "tags": [
+      "Artificial Intelligence",
+      "Cloud",
+      "Consumer Web",
+      "Productivity",
+      "Software",
+      "App development",
+      "Data Privacy"
+    ],
+    "website": "https://dropbox.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64902",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64552",
+    "name": "SharkNinja",
+    "profile_url": "https://www.builtinla.com/company/sharkninja",
+    "tags": [
+      "Beauty",
+      "Robotics",
+      "Design",
+      "Appliances",
+      "Manufacturing"
+    ],
+    "website": "http://www.sharkninja.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64552",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "54198",
+    "name": "ChowNow",
+    "profile_url": "https://www.builtinla.com/company/chownow",
+    "tags": [
+      "Food",
+      "Software"
+    ],
+    "website": "https://get.chownow.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=54198",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63811",
+    "name": "FloQast",
+    "profile_url": "https://www.builtinla.com/company/floqast",
+    "tags": [
+      "Artificial Intelligence",
+      "Fintech",
+      "Software"
+    ],
+    "website": "http://www.floqast.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63811",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "195964",
+    "name": "Red 6",
+    "profile_url": "https://www.builtinla.com/company/red-6",
+    "tags": [
+      "Aerospace",
+      "Hardware",
+      "Software",
+      "Virtual Reality",
+      "Defense"
+    ],
+    "website": "http://www.red6ar.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=195964",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "54036",
+    "name": "BAE Systems, Inc.",
+    "profile_url": "https://www.builtinla.com/company/bae-systems",
+    "tags": [
+      "Aerospace",
+      "Hardware",
+      "Information Technology",
+      "Security",
+      "Software",
+      "Cybersecurity",
+      "Defense"
+    ],
+    "website": "https://jobs.baesystems.com/global/en",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=54036",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64901",
+    "name": "Identity Digital",
+    "profile_url": "https://www.builtinla.com/company/identity-digital",
+    "tags": [
+      "Consumer Web",
+      "eCommerce",
+      "Internet of Things"
+    ],
+    "website": "https://www.identity.digital/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64901",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "88836",
+    "name": "Citadel Securities",
+    "profile_url": "https://www.builtinla.com/company/citadel-securities",
+    "tags": [
+      "Information Technology",
+      "Software",
+      "Financial Services"
+    ],
+    "website": "https://www.citadelsecurities.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=88836",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "90036",
+    "name": "Atticus",
+    "profile_url": "https://www.builtinla.com/company/atticus",
+    "tags": [
+      "Insurance",
+      "Legal Tech",
+      "Social Impact"
+    ],
+    "website": "http://www.atticus.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=90036",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "113343",
+    "name": "Munchkin, Inc.",
+    "profile_url": "https://www.builtinla.com/company/munchkin-inc",
+    "tags": [
+      "3D Printing",
+      "Consumer Web",
+      "eCommerce",
+      "Enterprise Web",
+      "Food",
+      "Kids + Family",
+      "Manufacturing"
+    ],
+    "website": "https://www.munchkin.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=113343",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "54054",
+    "name": "BlackLine",
+    "profile_url": "https://www.builtinla.com/company/blackline",
+    "tags": [
+      "Cloud",
+      "Fintech",
+      "Information Technology",
+      "Machine Learning",
+      "Software",
+      "App development",
+      "Generative AI"
+    ],
+    "website": "https://www.blackline.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=54054",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63642",
+    "name": "Crexi",
+    "profile_url": "https://www.builtinla.com/company/crexi",
+    "tags": [
+      "Real Estate",
+      "Sales",
+      "Software",
+      "PropTech"
+    ],
+    "website": "https://www.crexi.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63642",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "71923",
+    "name": "Genius Sports",
+    "profile_url": "https://www.builtinla.com/company/genius-sports",
+    "tags": [
+      "AdTech",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Marketing Tech",
+      "Software",
+      "Sports",
+      "Big Data Analytics"
+    ],
+    "website": "https://www.geniussports.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=71923",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "81516",
+    "name": "Snap Inc.",
+    "profile_url": "https://www.builtinla.com/company/snap-inc",
+    "tags": [
+      "Artificial Intelligence",
+      "Cloud",
+      "Machine Learning",
+      "Mobile",
+      "Software",
+      "Virtual Reality",
+      "App development"
+    ],
+    "website": "http://www.snap.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=81516",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "147748",
+    "name": "Monte Carlo",
+    "profile_url": "https://www.builtinla.com/company/monte-carlo",
+    "tags": [
+      "Big Data",
+      "Cloud",
+      "Software",
+      "Generative AI",
+      "Big Data Analytics"
+    ],
+    "website": "http://www.montecarlodata.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=147748",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64705",
+    "name": "Thrive Market",
+    "profile_url": "https://www.builtinla.com/company/thrive-market",
+    "tags": [
+      "Consumer Web",
+      "eCommerce",
+      "Food",
+      "Healthtech",
+      "Natural Language Processing",
+      "Social Impact"
+    ],
+    "website": "https://thrivemarket.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64705",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64775",
+    "name": "Work & Co",
+    "profile_url": "https://www.builtinla.com/company/work-co",
+    "tags": [
+      "Agency",
+      "Artificial Intelligence",
+      "Mobile",
+      "Software",
+      "Consulting",
+      "Design"
+    ],
+    "website": "http://work.co",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64775",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64591",
+    "name": "Smartly",
+    "profile_url": "https://www.builtinla.com/company/smartlyio",
+    "tags": [
+      "AdTech",
+      "Artificial Intelligence",
+      "Digital Media",
+      "Marketing Tech",
+      "Social Media",
+      "Software",
+      "Generative AI"
+    ],
+    "website": "https://www.smartly.io/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64591",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "82016",
+    "name": "Zeta Global",
+    "profile_url": "https://www.builtinla.com/company/zeta-global",
+    "tags": [
+      "AdTech",
+      "Artificial Intelligence",
+      "Marketing Tech",
+      "Software",
+      "Analytics"
+    ],
+    "website": "http://www.zetaglobal.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=82016",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64889",
+    "name": "Boeing",
+    "profile_url": "https://www.builtinla.com/company/boeing",
+    "tags": [
+      "Aerospace",
+      "Information Technology",
+      "Cybersecurity",
+      "Defense",
+      "Manufacturing"
+    ],
+    "website": "https://www.boeing.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64889",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "84406",
+    "name": "GrayMatter Robotics",
+    "profile_url": "https://www.builtinla.com/company/graymatter-robotics",
+    "tags": [
+      "Artificial Intelligence",
+      "Hardware",
+      "Productivity",
+      "Robotics",
+      "Software",
+      "Automation",
+      "Manufacturing"
+    ],
+    "website": "https://www.graymatter-robotics.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=84406",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64664",
+    "name": "System1",
+    "profile_url": "https://www.builtinla.com/company/system1",
+    "tags": [
+      "AdTech",
+      "Big Data",
+      "Digital Media",
+      "Marketing Tech"
+    ],
+    "website": "http://system1.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64664",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "55665",
+    "name": "General Motors",
+    "profile_url": "https://www.builtinla.com/company/general-motors",
+    "tags": [
+      "Automotive",
+      "Big Data",
+      "Information Technology",
+      "Robotics",
+      "Software",
+      "Transportation",
+      "Manufacturing"
+    ],
+    "website": "http://www.gm.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=55665",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "81584",
+    "name": "SES Satellites",
+    "profile_url": "https://www.builtinla.com/company/ses-satellites-o",
+    "tags": [
+      "Aerospace",
+      "Digital Media",
+      "Information Technology",
+      "Internet of Things",
+      "Mobile",
+      "Software"
+    ],
+    "website": "https://www.ses.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=81584",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64159",
+    "name": "Metropolis Technologies",
+    "profile_url": "https://www.builtinla.com/company/metropolis-technologies",
+    "tags": [
+      "Artificial Intelligence",
+      "Computer Vision",
+      "Machine Learning",
+      "Payments",
+      "Real Estate",
+      "PropTech"
+    ],
+    "website": "http://www.metropolis.io/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64159",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "112875",
+    "name": "Collectly",
+    "profile_url": "https://www.builtinla.com/company/collectly",
+    "tags": [
+      "Artificial Intelligence",
+      "Healthtech",
+      "Information Technology",
+      "Software",
+      "Conversational AI",
+      "Generative AI",
+      "Automation"
+    ],
+    "website": "http://collectly.co/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=112875",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64460",
+    "name": "Relativity Space",
+    "profile_url": "https://www.builtinla.com/company/relativity-space",
+    "tags": [
+      "Aerospace",
+      "Hardware",
+      "Robotics",
+      "Software",
+      "Manufacturing"
+    ],
+    "website": "http://relativityspace.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64460",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "82058",
+    "name": "John Deere",
+    "profile_url": "https://www.builtinla.com/company/john-deere",
+    "tags": [
+      "Artificial Intelligence",
+      "Cloud",
+      "Internet of Things",
+      "Machine Learning",
+      "Analytics",
+      "Industrial"
+    ],
+    "website": "https://www.deere.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=82058",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "190855",
+    "name": "True Anomaly",
+    "profile_url": "https://www.builtinla.com/company/true-anomaly",
+    "tags": [
+      "Aerospace",
+      "Artificial Intelligence",
+      "Hardware",
+      "Machine Learning",
+      "Software",
+      "Defense",
+      "Manufacturing"
+    ],
+    "website": "https://www.trueanomaly.space/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=190855",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64123",
+    "name": "Luxury Presence",
+    "profile_url": "https://www.builtinla.com/company/luxury-presence",
+    "tags": [
+      "Marketing Tech",
+      "Real Estate",
+      "Software",
+      "PropTech",
+      "SEO"
+    ],
+    "website": "http://www.luxurypresence.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64123",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "230575",
+    "name": "Axle Health",
+    "profile_url": "https://www.builtinla.com/company/axle-health",
+    "tags": [
+      "Artificial Intelligence",
+      "Healthtech",
+      "Information Technology",
+      "Logistics"
+    ],
+    "website": "https://www.axlehealth.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=230575",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "152842",
+    "name": "BuildOps",
+    "profile_url": "https://www.builtinla.com/company/buildops",
+    "tags": [
+      "Cloud",
+      "Mobile",
+      "Software"
+    ],
+    "website": "http://buildops.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=152842",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "152643",
+    "name": "swimply",
+    "profile_url": "https://www.builtinla.com/company/swimply",
+    "tags": [
+      "Marketing Tech"
+    ],
+    "website": "http://swimply.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=152643",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "85022",
+    "name": "Babylist",
+    "profile_url": "https://www.builtinla.com/company/babylist",
+    "tags": [
+      "eCommerce",
+      "Healthtech",
+      "Kids + Family",
+      "Retail",
+      "Social Media"
+    ],
+    "website": "https://www.babylist.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=85022",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "81891",
+    "name": "COLORS Worldwide",
+    "profile_url": "https://www.builtinla.com/company/colors-worldwide",
+    "tags": [
+      "News + Entertainment"
+    ],
+    "website": "https://www.colorsworldwide.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=81891",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64187",
+    "name": "Moov Financial",
+    "profile_url": "https://www.builtinla.com/company/moov-financial",
+    "tags": [
+      "Fintech",
+      "Payments"
+    ],
+    "website": "https://moov.io",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64187",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "191603",
+    "name": "AnySignal",
+    "profile_url": "https://www.builtinla.com/company/anysignal",
+    "tags": [
+      "Software"
+    ],
+    "website": "https://www.anysignal.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=191603",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64884",
+    "name": "Anduril",
+    "profile_url": "https://www.builtinla.com/company/anduril",
+    "tags": [
+      "Aerospace",
+      "Artificial Intelligence",
+      "Hardware",
+      "Robotics",
+      "Security",
+      "Software",
+      "Defense"
+    ],
+    "website": "http://www.anduril.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64884",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64893",
+    "name": "CCC Intelligent Solutions",
+    "profile_url": "https://www.builtinla.com/company/ccc-intelligent-solutions",
+    "tags": [
+      "Artificial Intelligence",
+      "Automotive",
+      "Internet of Things",
+      "Software"
+    ],
+    "website": "https://cccis.com/about/careers/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64893",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "109251",
+    "name": "AST Defeasance",
+    "profile_url": "https://www.builtinla.com/company/ast-defeasance",
+    "tags": [
+      "Real Estate"
+    ],
+    "website": "http://astdefeasance.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=109251",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "110448",
+    "name": "Home Alliance",
+    "profile_url": "https://www.builtinla.com/company/home-alliance",
+    "tags": [
+      "Other"
+    ],
+    "website": "http://homealliance.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=110448",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63679",
+    "name": "DISQO",
+    "profile_url": "https://www.builtinla.com/company/disqo",
+    "tags": [
+      "AdTech",
+      "Big Data",
+      "Cloud",
+      "Marketing Tech",
+      "Software",
+      "Analytics"
+    ],
+    "website": "http://disqo.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63679",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "56338",
+    "name": "Ryan",
+    "profile_url": "https://www.builtinla.com/company/ryan-in",
+    "tags": [
+      "Fintech",
+      "Consulting"
+    ],
+    "website": "https://ryan.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=56338",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "101826",
+    "name": "Tubi",
+    "profile_url": "https://www.builtinla.com/company/tubi",
+    "tags": [
+      "News + Entertainment"
+    ],
+    "website": "http://tubitv.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=101826",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "108747",
+    "name": "Next Health",
+    "profile_url": "https://www.builtinla.com/company/next-health",
+    "tags": [
+      "Fitness"
+    ],
+    "website": "http://www.next-health.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=108747",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "106113",
+    "name": "Cox Enterprises",
+    "profile_url": "https://www.builtinla.com/company/cox-enterprises",
+    "tags": [
+      "Automotive",
+      "Cloud",
+      "Greentech",
+      "Information Technology",
+      "Other",
+      "Software",
+      "Cybersecurity"
+    ],
+    "website": "http://www.coxenterprises.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=106113",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "185704",
+    "name": "Nominal",
+    "profile_url": "https://www.builtinla.com/company/nominal",
+    "tags": [
+      "Software"
+    ],
+    "website": "https://nominal.io",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=185704",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64132",
+    "name": "MarketAxess",
+    "profile_url": "https://www.builtinla.com/company/marketaxess",
+    "tags": [
+      "Fintech",
+      "Information Technology",
+      "Financial Services"
+    ],
+    "website": "https://www.marketaxess.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64132",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "88485",
+    "name": "King's Hawaiian",
+    "profile_url": "https://www.builtinla.com/company/kings-hawaiian",
+    "tags": [
+      "Food",
+      "Retail",
+      "Sales",
+      "Manufacturing"
+    ],
+    "website": "http://kingshawaiian.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=88485",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "235157",
+    "name": "USGBC California",
+    "profile_url": "https://www.builtinla.com/company/usgbc-california",
+    "tags": [
+      "Greentech",
+      "Other"
+    ],
+    "website": "http://usgbc-ca.org/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=235157",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "89022",
+    "name": "Jun Group",
+    "profile_url": "https://www.builtinla.com/company/jun-group",
+    "tags": [
+      "AdTech",
+      "Mobile"
+    ],
+    "website": "http://www.jungroup.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=89022",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "191078",
+    "name": "California FAIR Plan Association",
+    "profile_url": "https://www.builtinla.com/company/california-fair-plan-association",
+    "tags": [
+      "Insurance"
+    ],
+    "website": "http://www.cfpnet.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=191078",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "168916",
+    "name": "Tech Holding",
+    "profile_url": "https://www.builtinla.com/company/tech-holding",
+    "tags": [
+      "Software",
+      "Consulting"
+    ],
+    "website": "https://techholding.co/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=168916",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64419",
+    "name": "Puffco",
+    "profile_url": "https://www.builtinla.com/company/puffco",
+    "tags": [
+      "Cannabis",
+      "Hardware"
+    ],
+    "website": "https://www.puffco.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64419",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "144656",
+    "name": "Galvanick",
+    "profile_url": "https://www.builtinla.com/company/galvanick",
+    "tags": [
+      "Cybersecurity"
+    ],
+    "website": "http://www.galvanick.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=144656",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "63876",
+    "name": "GR0",
+    "profile_url": "https://www.builtinla.com/company/gr0",
+    "tags": [
+      "Agency",
+      "eCommerce",
+      "Marketing Tech",
+      "Professional Services",
+      "Consulting"
+    ],
+    "website": "https://gr0.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=63876",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "82256",
+    "name": "Riot Games",
+    "profile_url": "https://www.builtinla.com/company/riot-games",
+    "tags": [
+      "eCommerce",
+      "Gaming"
+    ],
+    "website": "http://www.riotgames.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=82256",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "236418",
+    "name": "Wolf Games",
+    "profile_url": "https://www.builtinla.com/company/wolf-games",
+    "tags": [
+      "Artificial Intelligence",
+      "Gaming",
+      "Information Technology",
+      "Software"
+    ],
+    "website": "https://www.wolfgames.net/publiceye",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=236418",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "94402",
+    "name": "Wellth",
+    "profile_url": "https://www.builtinla.com/company/wellth",
+    "tags": [
+      "Healthtech"
+    ],
+    "website": "http://www.wellthapp.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=94402",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "110985",
+    "name": "AltaMed Health Services",
+    "profile_url": "https://www.builtinla.com/company/altamed-health-services",
+    "tags": [
+      "Fitness",
+      "Healthtech"
+    ],
+    "website": "http://www.AltaMed.org",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=110985",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "236323",
+    "name": "Muvr",
+    "profile_url": "https://www.builtinla.com/company/muvr",
+    "tags": [
+      "Software",
+      "Transportation"
+    ],
+    "website": "https://www.muvr.io/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=236323",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "82075",
+    "name": "Wipfli",
+    "profile_url": "https://www.builtinla.com/company/wipfli",
+    "tags": [
+      "Cloud",
+      "Fintech",
+      "Software",
+      "Business Intelligence",
+      "Consulting",
+      "Financial Services"
+    ],
+    "website": "https://www.wipfli.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=82075",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "82801",
+    "name": "AECOM",
+    "profile_url": "https://www.builtinla.com/company/aecom",
+    "tags": [
+      "Consulting"
+    ],
+    "website": "http://www.aecom.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=82801",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "113318",
+    "name": "Xano",
+    "profile_url": "https://www.builtinla.com/company/xano",
+    "tags": [
+      "Information Technology",
+      "Software",
+      "Database",
+      "App development"
+    ],
+    "website": "https://www.xano.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=113318",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "109259",
+    "name": "Atlas Technica",
+    "profile_url": "https://www.builtinla.com/company/atlas-technica",
+    "tags": [
+      "Information Technology"
+    ],
+    "website": "https://www.atlastechnica.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=109259",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "102529",
+    "name": "Curri",
+    "profile_url": "https://www.builtinla.com/company/curri",
+    "tags": [
+      "Information Technology",
+      "Logistics"
+    ],
+    "website": "https://www.curri.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=102529",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "79318",
+    "name": "Million Dollar Baby Co.",
+    "profile_url": "https://www.builtinla.com/company/million-dollar-baby-co",
+    "tags": [
+      "eCommerce",
+      "Kids + Family",
+      "Other",
+      "Retail",
+      "Sales",
+      "Design",
+      "Manufacturing"
+    ],
+    "website": "http://milliondollarbabyco.com",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=79318",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "174804",
+    "name": "City Year",
+    "profile_url": "https://www.builtinla.com/company/city-year",
+    "tags": [
+      "Edtech",
+      "Hospitality"
+    ],
+    "website": "https://linktr.ee/Cityyear",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=174804",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "68886",
+    "name": "PlayStation",
+    "profile_url": "https://www.builtinla.com/company/playstation",
+    "tags": [
+      "Gaming"
+    ],
+    "website": "https://www.playstation.com/en-us/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=68886",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "64573",
+    "name": "SimplePractice",
+    "profile_url": "https://www.builtinla.com/company/simplepractice",
+    "tags": [
+      "Healthtech",
+      "Software",
+      "Telehealth"
+    ],
+    "website": "https://www.simplepractice.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=64573",
+    "source": "built-in-la"
+  },
+  {
+    "company_id": "216108",
+    "name": "Create Music Group",
+    "profile_url": "https://www.builtinla.com/company/create-music-group",
+    "tags": [
+      "Music"
+    ],
+    "website": "https://www.createmusicgroup.com/",
+    "careers_url": "https://www.builtinla.com/jobs?companyId=216108",
+    "source": "built-in-la"
+  }
+]

@@ -9,7 +9,7 @@ export default function InteractiveGlobe() {
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const globe = Globe()(containerRef.current)
+    const globe = new Globe(containerRef.current)
       .globeImageUrl(
         "https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
       )

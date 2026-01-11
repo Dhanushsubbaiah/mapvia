@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   CircleMarker,
   MapContainer,
@@ -25,6 +25,10 @@ type LeafletMapProps = {
   companies: Company[];
   onSelectCompany: (company: Company) => void;
   onMapMove: (payload: MapMovePayload) => void;
+  initialCenter?: [number, number];
+  initialZoom?: number;
+  targetCenter?: [number, number] | null;
+  targetZoom?: number | null;
 };
 
 type MarkerItem =
@@ -132,6 +136,52 @@ function MapEvents({
   return null;
 }
 
+function InitialBounds({
+  onMapMove,
+  onZoomChange,
+}: {
+  onMapMove: LeafletMapProps["onMapMove"];
+  onZoomChange: (zoom: number) => void;
+}) {
+  const map = useMap();
+
+  useEffect(() => {
+    const center = map.getCenter();
+    const bounds = map.getBounds();
+    onZoomChange(map.getZoom());
+    onMapMove({
+      center: { lat: center.lat, lng: center.lng },
+      bounds: {
+        north: bounds.getNorth(),
+        south: bounds.getSouth(),
+        east: bounds.getEast(),
+        west: bounds.getWest(),
+      },
+      zoom: map.getZoom(),
+    });
+  }, [map, onMapMove, onZoomChange]);
+
+  return null;
+}
+
+function MapRecenter({
+  targetCenter,
+  targetZoom,
+}: {
+  targetCenter?: [number, number] | null;
+  targetZoom?: number | null;
+}) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!targetCenter) return;
+    const zoom = targetZoom ?? map.getZoom();
+    map.setView(targetCenter, zoom, { animate: true });
+  }, [map, targetCenter, targetZoom]);
+
+  return null;
+}
+
 function ClusterMarker({
   lat,
   lng,
@@ -202,8 +252,12 @@ export default function LeafletMap({
   companies,
   onSelectCompany,
   onMapMove,
+  initialCenter = [37.68, -122.25],
+  initialZoom = 8,
+  targetCenter,
+  targetZoom,
 }: LeafletMapProps) {
-  const [zoom, setZoom] = useState(11);
+  const [zoom, setZoom] = useState(initialZoom);
 
   const items = useMemo(
     () => clusterCompanies(companies, zoom),
@@ -212,8 +266,8 @@ export default function LeafletMap({
 
   return (
     <MapContainer
-      center={[34.0522, -118.2437]}
-      zoom={11}
+      center={initialCenter}
+      zoom={initialZoom}
       minZoom={9}
       maxZoom={17}
       preferCanvas
@@ -235,6 +289,8 @@ export default function LeafletMap({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <MapEvents onMapMove={onMapMove} onZoomChange={setZoom} />
+      <InitialBounds onMapMove={onMapMove} onZoomChange={setZoom} />
+      <MapRecenter targetCenter={targetCenter} targetZoom={targetZoom} />
       {items.map((item) => {
         if (item.type === "cluster") {
           return (

@@ -3,7 +3,12 @@ import Link from "next/link";
 export default function SiteHeader() {
   return (
     <header className="flex items-center justify-between gap-4 border-b border-slate-200 bg-white/80 px-6 py-4 backdrop-blur">
-      <Link href="/" className="flex items-center gap-2">
+      <Link
+        href="/"
+        aria-label="Mapvia home"
+        title="Mapvia home"
+        className="flex items-center gap-2"
+      >
         <span className="text-lg font-semibold tracking-tight text-slate-900">
           Mapvia
         </span>

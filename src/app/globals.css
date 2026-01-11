@@ -2,15 +2,19 @@
 @import "leaflet/dist/leaflet.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f2ea;
+  --foreground: #0f172a;
+  --accent: #0f766e;
+  --accent-soft: #d1fae5;
+  --ink: #111827;
+  --sand: #f3eee6;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +27,50 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui;
+  font-family: var(--font-manrope), ui-sans-serif, system-ui;
+}
+
+.font-display {
+  font-family: var(--font-space-grotesk), var(--font-manrope), ui-sans-serif,
+    system-ui;
+}
+
+.hero-sheen {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(14, 116, 144, 0.18), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(249, 115, 22, 0.18), transparent 45%),
+    radial-gradient(circle at 50% 75%, rgba(15, 118, 110, 0.2), transparent 60%);
+}
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: floatY 6s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
 }
 
 .cluster-marker {

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { readFile } from "fs/promises";
+import { access, readFile } from "fs/promises";
 import path from "path";
 import type { Company } from "@/lib/types";
 
@@ -16,6 +16,7 @@ const OVERPASS_ENDPOINTS = [
 ];
 const OVERPASS_TIMEOUT_MS = 9000;
 const OVERPASS_CACHE_TTL_MS = 60000;
+const USE_OVERPASS = false;
 let overpassCache:
   | { key: string; timestamp: number; data: Company[] }
   | null = null;
@@ -81,6 +82,56 @@ const parseCsv = (content: string): string[][] => {
   return rows;
 };
 
+const csvToTechCompanies = (content: string): Company[] => {
+  const rows = parseCsv(content);
+  const header = rows[0];
+  if (!header) return [];
+  const index = new Map<string, number>();
+  header.forEach((name, idx) => {
+    index.set(name.trim(), idx);
+  });
+
+  const companies: Company[] = [];
+  for (let i = 1; i < rows.length; i += 1) {
+    const row = rows[i];
+    const name = row[index.get("Company Name") ?? -1]?.trim() ?? "";
+    const latRaw = row[index.get("Lat") ?? -1]?.trim() ?? "";
+    const lngRaw = row[index.get("Long") ?? -1]?.trim() ?? "";
+    if (!name || !latRaw || !lngRaw) {
+      continue;
+    }
+    const lat = Number(latRaw);
+    const lng = Number(lngRaw);
+    if (
+      Number.isNaN(lat) ||
+      Number.isNaN(lng) ||
+      (lat === 0 && lng === 0)
+    ) {
+      continue;
+    }
+    const address = row[index.get("Address") ?? -1]?.trim() ?? "";
+    const location = row[index.get("Location") ?? -1]?.trim() ?? "";
+    const websiteRaw = row[index.get("Website") ?? -1]?.trim() ?? "";
+    const website = normalizeUrl(websiteRaw);
+    const tagsRaw = row[index.get("Tags") ?? -1]?.trim() ?? "";
+    const tags = tagsRaw
+      ? tagsRaw.split(",").map((tag) => tag.trim()).filter(Boolean)
+      : [];
+
+    companies.push({
+      id: `tech-${i}`,
+      name,
+      lat,
+      lng,
+      address: address || location,
+      website: website || undefined,
+      careers_url: website || "",
+      tags,
+    });
+  }
+  return companies;
+};
+
 type OverpassElement = {
   id: number;
   type: "node" | "way" | "relation";
@@ -90,16 +141,35 @@ type OverpassElement = {
   tags?: Record<string, string>;
 };
 
+const isInvalidHostname = (hostname: string) => {
+  const host = hostname.toLowerCase();
+  return (
+    host === "localhost" ||
+    host.endsWith(".localhost") ||
+    host.endsWith(".local")
+  );
+};
+
 const normalizeUrl = (value: string) => {
   const trimmed = value.trim();
   if (!trimmed) return "";
-  if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
-    return trimmed;
+
+  const withScheme = trimmed.startsWith("http://") || trimmed.startsWith("https://");
+  const candidate = trimmed.startsWith("www.") ? `https://${trimmed}` : trimmed;
+
+  if (!withScheme && !candidate.includes(".")) {
+    return "";
   }
-  if (trimmed.startsWith("www.")) {
-    return `https://${trimmed}`;
+
+  try {
+    const url = new URL(withScheme ? trimmed : candidate);
+    if (isInvalidHostname(url.hostname)) {
+      return "";
+    }
+    return url.toString();
+  } catch {
+    return "";
   }
-  return trimmed;
 };
 
 const buildAddress = (tags: Record<string, string> | undefined) => {
@@ -273,9 +343,21 @@ const loadCompanies = async (): Promise<Company[]> => {
   if (cachedCompanies) {
     return cachedCompanies;
   }
-  const filePath = path.join(process.cwd(), "data", "osm_companies.csv");
-  const content = await readFile(filePath, "utf-8");
-  cachedCompanies = csvToCompanies(content);
+  const techPath = path.join(
+    process.cwd(),
+    "data",
+    "Bay-Area-Companies-List.csv"
+  );
+  try {
+    await access(techPath);
+    const techContent = await readFile(techPath, "utf-8");
+    cachedCompanies = csvToTechCompanies(techContent);
+    return cachedCompanies;
+  } catch {
+    const filePath = path.join(process.cwd(), "data", "osm_companies.csv");
+    const content = await readFile(filePath, "utf-8");
+    cachedCompanies = csvToCompanies(content);
+  }
   return cachedCompanies;
 };
 
@@ -290,15 +372,21 @@ export async function GET(request: Request) {
     );
   }
 
-  const limitParam = Number(searchParams.get("limit") ?? "20");
-  const limit = Number.isNaN(limitParam) ? 20 : Math.min(limitParam, 50);
+  const limitRaw = searchParams.get("limit");
+  const limitParam = Number(limitRaw ?? "20");
+  const limit =
+    limitRaw === "all"
+      ? Number.MAX_SAFE_INTEGER
+      : Number.isNaN(limitParam)
+      ? 20
+      : Math.min(limitParam, 2000);
   const cursor = searchParams.get("cursor");
   const q = searchParams.get("q")?.trim().toLowerCase();
   const tagsQuery = searchParams.get("tags");
   const source = searchParams.get("source");
 
   let companies: Company[] = [];
-  if (source === "overpass" || bbox) {
+  if (USE_OVERPASS && (source === "overpass" || bbox)) {
     const activeBbox = bbox ?? DEFAULT_LA_BBOX;
     try {
       companies = await fetchOverpassCompanies(activeBbox, q);

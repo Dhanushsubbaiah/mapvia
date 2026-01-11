@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import {
   CircleMarker,
   MapContainer,
@@ -91,11 +91,15 @@ function MapEvents({
   onMapMove: LeafletMapProps["onMapMove"];
   onZoomChange: (zoom: number) => void;
 }) {
+  const skipMoveEvent = useRef(false);
   const map = useMapEvents({
     moveend: () => {
+      if (skipMoveEvent.current) {
+        skipMoveEvent.current = false;
+        return;
+      }
       const center = map.getCenter();
       const bounds = map.getBounds();
-      onZoomChange(map.getZoom());
       onMapMove({
         center: { lat: center.lat, lng: center.lng },
         bounds: {
@@ -108,9 +112,10 @@ function MapEvents({
       });
     },
     zoomend: () => {
+      onZoomChange(map.getZoom());
       const center = map.getCenter();
       const bounds = map.getBounds();
-      onZoomChange(map.getZoom());
+      skipMoveEvent.current = true;
       onMapMove({
         center: { lat: center.lat, lng: center.lng },
         bounds: {
@@ -211,6 +216,19 @@ export default function LeafletMap({
       zoom={11}
       minZoom={9}
       maxZoom={17}
+      preferCanvas
+      zoomSnap={0.5}
+      zoomDelta={0.5}
+      wheelDebounceTime={80}
+      wheelPxPerZoomLevel={120}
+      inertia
+      inertiaDeceleration={3000}
+      inertiaMaxSpeed={1500}
+      updateWhenIdle
+      updateWhenZooming={false}
+      zoomAnimation
+      fadeAnimation
+      markerZoomAnimation
       className="h-full w-full"
       scrollWheelZoom
     >

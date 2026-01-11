@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import SiteHeader from "@/components/SiteHeader";
 import type { Company } from "@/lib/types";
@@ -14,6 +14,30 @@ type MapMovePayload = {
 const LeafletMap = dynamic(() => import("@/components/LeafletMap"), {
   ssr: false,
 });
+
+const roundCoord = (value: number, precision = 4) =>
+  Number(value.toFixed(precision));
+
+const normalizeMovePayload = (payload: MapMovePayload): MapMovePayload => ({
+  center: {
+    lat: roundCoord(payload.center.lat),
+    lng: roundCoord(payload.center.lng),
+  },
+  bounds: {
+    north: roundCoord(payload.bounds.north),
+    south: roundCoord(payload.bounds.south),
+    east: roundCoord(payload.bounds.east),
+    west: roundCoord(payload.bounds.west),
+  },
+  zoom: payload.zoom,
+});
+
+const isSameMovePayload = (a: MapMovePayload, b: MapMovePayload) =>
+  a.zoom === b.zoom &&
+  a.bounds.north === b.bounds.north &&
+  a.bounds.south === b.bounds.south &&
+  a.bounds.east === b.bounds.east &&
+  a.bounds.west === b.bounds.west;
 
 const radiusOptions = [
   { label: "5 miles", value: "5" },
@@ -31,6 +55,7 @@ export default function MapPage() {
   const [selectedCompany, setSelectedCompany] = useState<Company | null>(null);
   const [hasMoved, setHasMoved] = useState(false);
   const [lastMove, setLastMove] = useState<MapMovePayload | null>(null);
+  const fetchController = useRef<AbortController | null>(null);
 
   useEffect(() => {
     const loadCompanies = async () => {
@@ -57,19 +82,34 @@ export default function MapPage() {
     const bbox = `${bounds.west},${bounds.south},${bounds.east},${bounds.north}`;
     const url = new URL("/api/companies", window.location.origin);
     url.searchParams.set("bbox", bbox);
-    url.searchParams.set("limit", "200");
+    url.searchParams.set("limit", "150");
+    url.searchParams.set("source", "overpass");
     if (keyword.trim()) {
       url.searchParams.set("q", keyword.trim());
     }
+    let controller: AbortController | null = null;
     try {
+      fetchController.current?.abort();
+      controller = new AbortController();
+      fetchController.current = controller;
       setIsLoading(true);
-      const response = await fetch(url.toString());
+      const response = await fetch(url.toString(), {
+        signal: controller.signal,
+      });
+      if (!response.ok) {
+        throw new Error(`Companies fetch failed: ${response.status}`);
+      }
       const json = await response.json();
       setCompanies(json.data ?? []);
     } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") {
+        return;
+      }
       console.error("Failed to load companies", error);
-      setCompanies([]);
     } finally {
+      if (controller && fetchController.current?.signal === controller.signal) {
+        fetchController.current = null;
+      }
       setIsLoading(false);
     }
   };
@@ -78,19 +118,23 @@ export default function MapPage() {
     if (!lastMove) return undefined;
     const handle = window.setTimeout(() => {
       loadCompaniesForBbox(lastMove);
-    }, 400);
+    }, 250);
     return () => window.clearTimeout(handle);
   }, [lastMove, keyword]);
 
   const handleMapMove = (payload: MapMovePayload) => {
+    const normalized = normalizeMovePayload(payload);
+    if (lastMove && isSameMovePayload(lastMove, normalized)) {
+      return;
+    }
     if (!lastMove) {
-      setLastMove(payload);
+      setLastMove(normalized);
       return;
     }
 
     setHasMoved(true);
-    setLastMove(payload);
-    console.info("event:map_moved", payload);
+    setLastMove(normalized);
+    console.info("event:map_moved", normalized);
   };
 
   const handleSearchSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -279,7 +323,7 @@ export default function MapPage() {
               </button>
             ) : (
               <div className="mt-6 rounded-2xl border border-dashed border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-500">
-                No careers or website link available for this company yet.
+                Website link is in progress for this company.
               </div>
             )}
           </div>

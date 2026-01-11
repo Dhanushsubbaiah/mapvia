@@ -224,8 +224,6 @@ export default function LeafletMap({
       inertia
       inertiaDeceleration={3000}
       inertiaMaxSpeed={1500}
-      updateWhenIdle
-      updateWhenZooming={false}
       zoomAnimation
       fadeAnimation
       markerZoomAnimation

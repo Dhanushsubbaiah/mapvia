@@ -137,10 +137,9 @@ export default function MapPage() {
   const [targetZoom, setTargetZoom] = useState<number | null>(null);
   const [searchNotice, setSearchNotice] = useState<string | null>(null);
   const mapKey = areaPreset ? `area-${areaPreset.key}` : "area-default";
-  const initialCenter: [number, number] = areaPreset?.center ?? [
-    37.68,
-    -122.25,
-  ];
+  const initialCenter: [number, number] = areaPreset
+    ? ([...areaPreset.center] as [number, number])
+    : [37.68, -122.25];
   const initialZoom = areaPreset?.zoom ?? 8;
 
   useEffect(() => {

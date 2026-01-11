@@ -41,12 +41,19 @@ const radiusOptions = [
   { label: "35 miles", value: "35" },
 ];
 
-const AREA_PRESETS = [
+type AreaPreset = {
+  key: string;
+  label: string;
+  center: [number, number];
+  zoom: number;
+};
+
+const AREA_PRESETS: AreaPreset[] = [
   { key: "soma", label: "SOMA / Mission Bay", center: [37.7786, -122.3999], zoom: 13 },
   { key: "palo-alto", label: "Palo Alto", center: [37.4419, -122.143], zoom: 13 },
   { key: "mountain-view", label: "Mountain View", center: [37.3861, -122.0839], zoom: 12 },
   { key: "berkeley", label: "Berkeley", center: [37.8715, -122.273], zoom: 13 },
-] as const;
+];
 
 const SF_ZIPCODES = new Set([
   "94102",

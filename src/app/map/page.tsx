@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -115,7 +115,7 @@ const BERKELEY_ZIPCODES = new Set([
   "94720",
 ]);
 
-export default function MapPage() {
+function MapPageContent() {
   const searchParams = useSearchParams();
   const areaKey = searchParams.get("area");
   const areaPreset = useMemo(
@@ -521,5 +521,13 @@ export default function MapPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function MapPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <MapPageContent />
+    </Suspense>
   );
 }
